@@ -1,4 +1,4 @@
-#include "./ledtreebasic.h"
+#include "ledtreebasic.h"
 
 void setup() {
   pinMode(OUT_PIN, OUTPUT);
