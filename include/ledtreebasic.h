@@ -5,8 +5,13 @@
 #include <ATtinySerialOut.hpp>
 #endif
 #define OUT_PIN 4
-#define IN_PIN 3
+#define IN_PIN  3
 #define BTN_PIN 1
+
+//   (PCINT5/RESET/ADC0/dW)          PB5 |1     8| VCC
+//   (PCINT3/XTAL1/CLKI/OC1B/ADC3)   PB3 |2     7| PB2 (SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)
+//   (PCINT4/XTAL2/CLKO/OC1B/ADC2)   PB4 |3     6| PB1 (MISO/DO/AIN1/OC0B/OC1A/PCINT1)
+//                                   GND |4     5| PB0 (MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)
 
 unsigned long lastCheckTime = 0;
 unsigned long const checkInterval = 10;  //  Check every 10 milliseconds.
