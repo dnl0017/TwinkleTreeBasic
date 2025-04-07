@@ -8,8 +8,9 @@ Cycling through modes is achieved by press of a button.
 
 ## Hardware
 - ATtiny85 PU.
-- 2N3904 NPN BJT.
+- IRLZ44N N-channel MOSFET (logic level).
 - 10 K&#937; resistor.
+- 67 K&#937; resistor.
 - 50 K&#937; linear potentiometer.
 - capacitive push button.
 - USBTiny compatible AVR programmer.
